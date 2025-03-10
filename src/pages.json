@@ -1,0 +1,85 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "name": "index",
+      "style": {
+        "mp-alipay": {
+          "allowsBounceVertical": "NO"
+        },
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "name": "mine",
+      "style": {
+        "mp-alipay": {
+          "allowsBounceVertical": "NO"
+        },
+        "navigationBarTitleText": "个人中心",
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F5F5"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages_index",
+      "pages": [
+        {
+          "path": "plan/index",
+          "name": "planIndex",
+          "style": {
+            "mp-alipay": {
+              "allowsBounceVertical": "NO"
+            },
+            "navigationBarTitleText": "测试1",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages_mine",
+      "pages": [
+        {
+          "path": "patient/index",
+          "name": "patientIndex",
+          "style": {
+            "mp-alipay": {
+              "allowsBounceVertical": "NO"
+            },
+            "navigationBarTitleText": "测试2",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    }
+  ],
+  "tabBar": {
+    "color": "#bfbfbf",
+    "custom": true,
+    "height": "0",
+    "selectedColor": "#0165FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": ""
+      }
+    ],
+    "backgroundColor": ""
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#FFF"
+    // "rpxCalcMaxDeviceWidth": 1024, // rpx 计算所支持的最大设备宽度，单位 px，默认值为 960
+    // "rpxCalcBaseDeviceWidth": 375, // rpx 计算使用的基准设备宽度，设备实际宽度超出 rpx 计算所支持的最大设备宽度时将按基准宽度计算，单位 px，默认值为 375
+    // "rpxCalcIncludeWidth": 750 // rpx 计算特殊处理的值，始终按实际的设备宽度计算，单位 rpx，默认值为 750
+  }
+}

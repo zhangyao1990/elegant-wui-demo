@@ -1,0 +1,115 @@
+{
+  "name": "Elegant-Wui-demo",
+  "appid": "__UNI__B6DB095",
+  "description": "",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  /* 5+App特有相关 */
+  "app-plus": {
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    },
+    /* 模块配置 */
+    "modules": {},
+    /* 应用发布信息 */
+    "distribute": {
+      /* android打包配置 */
+      "android": {
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+          "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+          "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+          "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+          "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+          "<uses-feature android:name=\"android.hardware.camera\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+        ]
+      },
+      /* ios打包配置 */
+      "ios": {},
+      /* SDK配置 */
+      "sdkConfigs": {}
+    }
+  },
+  /* 快应用特有相关 */
+  "quickapp": {},
+  /* 小程序特有相关 */
+  "mp-weixin": {
+    "appid": "wx459779f15f66a411",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "ignoreDevUnusedFiles": false
+    },
+    "usingComponents": true,
+    "darkmode": true,
+    "themeLocation": "theme.json",
+    "optimization": {
+      "subPackages": true
+    },
+    "lazyCodeLoading": "requiredComponents"
+  },
+  "mp-alipay": {
+    "usingComponents": true,
+    "darkmode": true,
+    "appid": "2021002197696258",
+    "themeLocation": "theme.json",
+    "styleIsolation": "shared"
+  },
+  "mp-baidu": {
+    "usingComponents": true
+  },
+  "mp-toutiao": {
+    "usingComponents": true
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "vueVersion": "3",
+  "h5": {
+    "darkmode": true,
+    "themeLocation": "theme.json",
+    "title": "",
+    "template": "",
+    "router": {
+      "mode": "history"
+      //      "base": ""
+    },
+    "async": {
+      //页面js异步加载配置
+      "loading": "AsyncLoading", //页面js加载时使用的组件（需注册为全局组件）
+      "error": "AsyncError", //页面js加载失败时使用的组件（需注册为全局组件）
+      "delay": 20000, //展示 loading 加载组件的延时时间（页面 js 若在 delay 时间内加载完成，则不会显示 loading 组件）
+      "timeout": 30000 //页面js加载超时时间（超时后展示 error 对应的组件）
+    },
+    "devServer": {
+      "https": false
+    },
+    "unipush": {
+      "enable": false
+    },
+    "sdkConfigs": {
+      "maps": {}
+    },
+    "optimization": {
+      "treeShaking": {
+        "enable": false
+      }
+    }
+  }
+}
